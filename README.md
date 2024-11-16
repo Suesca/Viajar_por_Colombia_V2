@@ -69,10 +69,6 @@ Este proyecto es una aplicación web interactiva que permite visualizar datos de
 
 Las contribuciones son bienvenidas. Si tienes ideas para mejorar el proyecto o encuentras algún error, por favor abre un *issue* o un *pull request*.
 
-## Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
-
 ---
 
 ## Imágenes de ejemplo
