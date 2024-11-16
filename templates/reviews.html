@@ -1,0 +1,176 @@
+{% extends "layout.html" %} {% block title %}Reseñas{% endblock %} {% block
+content %}
+<div class="main">
+  <div class="main-contenido">
+    <!-- Título principal -->
+    <div class="main--titulo">
+      <h1>Reseñas de Nuestros Usuarios</h1>
+      <h2>Lo que opinan quienes ya viajaron</h2>
+    </div>
+
+    <!-- Sección de Reseñas -->
+    <div class="resenas">
+      <!-- Reseña 1 -->
+      <div class="review-card">
+        <p class="review-text">
+          "Un viaje espectacular. Cada rincón de Colombia es único y lleno de
+          sorpresas. Definitivamente regresaré."
+        </p>
+        <p class="review-author">- Ana María</p>
+        <div class="review-rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+        </div>
+      </div>
+
+      <!-- Reseña 2 -->
+      <div class="review-card">
+        <p class="review-text">
+          "Las ciudades son muy vibrantes y la cultura es impresionante. Cada
+          momento fue una aventura inolvidable."
+        </p>
+        <p class="review-author">- Carlos Rodríguez</p>
+        <div class="review-rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+        </div>
+      </div>
+
+      <!-- Reseña 3 -->
+      <div class="review-card">
+        <p class="review-text">
+          "Una experiencia maravillosa. La comida, las playas, la gente... todo
+          fue perfecto. ¡Gracias por recomendarme estos destinos!"
+        </p>
+        <p class="review-author">- Laura Gómez</p>
+        <div class="review-rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+        </div>
+      </div>
+
+      <!-- Reseñas adicionales, inicialmente ocultas -->
+      <div class="more-reviews hidden" style="display: none">
+        <div class="review-card">
+          <p class="review-text">
+            "Un viaje inolvidable. Las playas de Colombia son de las mejores del
+            mundo y la gente es muy amable. ¡Definitivamente volveré!"
+          </p>
+          <p class="review-author">- Jorge Sánchez</p>
+          <div class="review-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">
+            "Colombia me sorprendió en cada paso. Desde las montañas hasta la
+            costa, hay tanto que descubrir. ¡Recomiendo este destino a todos!"
+          </p>
+          <p class="review-author">- Pablo Martínez</p>
+          <div class="review-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">
+            "Un viaje inolvidable. Los paisajes son impresionantes y la gente es
+            increíblemente amable. ¡Lo recomiendo al 100%!"
+          </p>
+          <p class="review-author">- Javier Gómez</p>
+          <div class="review-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">
+            "Colombia tiene una diversidad impresionante, desde playas hasta
+            montañas. ¡Una experiencia única que todos deberían vivir!"
+          </p>
+          <p class="review-author">- Laura Pérez</p>
+          <div class="review-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">
+            "Las ciudades colombianas tienen un encanto especial.
+            ¡Definitivamente volveré para explorar más lugares!"
+          </p>
+          <p class="review-author">- Sergio Ramírez</p>
+          <div class="review-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">
+            "La gastronomía colombiana es de otro nivel. ¡Cada plato es una
+            explosión de sabor!"
+          </p>
+          <p class="review-author">- Mariana López</p>
+          <div class="review-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">
+            "El viaje fue excelente, pero algunos servicios podrían mejorar. Aún
+            así, me llevé grandes recuerdos."
+          </p>
+          <p class="review-author">- Carlos Hernández</p>
+          <div class="review-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón para explorar más reseñas -->
+      <a class="main--boton" href="#" onclick="showMoreReviews()"
+        >Ver más reseñas</a
+      >
+    </div>
+  </div>
+</div>
+{% endblock %}

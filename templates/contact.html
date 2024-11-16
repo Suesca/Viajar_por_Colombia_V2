@@ -1,0 +1,47 @@
+{% extends "layout.html" %} {% block content %}
+<!-- Contenido específico para la página de contacto -->
+<div class="main">
+  <div class="main-contenido">
+    <div class="main--titulo">
+      <h1>Contacto</h1>
+      <h2>Envía tus preguntas o comentarios</h2>
+    </div>
+
+    <div class="review-section">
+      <form
+        method="GET"
+        action="{{ url_for('contact') }}"
+        onsubmit="return validateContactForm()"
+      >
+        <label for="name">Nombre:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="input--campo"
+          required
+        />
+
+        <label for="email">Correo electrónico:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="input--campo"
+          required
+        />
+
+        <label for="message">Mensaje:</label>
+        <textarea
+          id="message"
+          name="message"
+          class="input--campo"
+          required
+        ></textarea>
+
+        <input type="submit" value="Enviar" class="btn--form" />
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

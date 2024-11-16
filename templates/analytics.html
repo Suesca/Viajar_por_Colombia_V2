@@ -1,0 +1,47 @@
+{% extends "layout.html" %} {% block title %} Analytics por Colombia {% endblock
+%} {% block content %}
+<div class="main">
+  <div class="main-contenido">
+    <!-- Titulo Principal -->
+    <div class="main--titulo">
+      <h1>Colombia</h1>
+      <h2>Principales sitios turisticos</h2>
+    </div>
+
+    <!-- Tarjetas de sitios turísticos -->
+    <div class="sitios-turisticos">
+      <div class="row">
+        {% for sitio in sitios %}
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="{{ sitio.imagen }}"
+              class="card-img-top"
+              alt="{{ sitio.nombre }}"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ sitio.nombre }}</h5>
+              <p class="card-text">{{ sitio.descripcion }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="main--titulo">
+      <h1>Análisis Estadístico</h1>
+      <h2>Cantidad de turistas a colombia</h2>
+    </div>
+
+    <!-- Mostrar el gráfico -->
+    <div class="grafico">
+      <img src="{{ image_path_line }}" alt="Gráfico de llegadas" width="800" />
+    </div>
+
+    <div class="grafico">
+      <img src="{{ image_path_pie }}" alt="Gráfico de torta" width="800" />
+    </div>
+  </div>
+</div>
+{% endblock %}
