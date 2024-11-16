@@ -16,6 +16,7 @@ Este proyecto es una aplicación web interactiva que permite visualizar datos de
 - **Pandas**: Para el manejo y procesamiento de los datos en formato CSV.
 - **Matplotlib**: Para la generación de gráficos visuales.
 - **HTML/CSS**: Para la creación de las plantillas web.
+- **JS**: Para la validar el formulario y mostrar las reseñas.
   
 ## Requisitos
 
